@@ -25,7 +25,7 @@ app.get('/api/users', authen.required, userController.getUser);
 app.put('/api/users', authen.required, userController.updateUser);
 // 3.4.5 List Articles
 // GET /api/articles
-app.get('/api/articles', authen.options, articleController.getArticlesById); 
+app.get('/api/articles', articleController.getArticlesById); 
 // 3.4.6 Feed Articles
 // GET /api/articles/feed
 app.get('/api/articles/feed', authen.required, articleController.getArticlesById); 
